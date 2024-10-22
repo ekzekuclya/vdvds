@@ -123,15 +123,15 @@ def name(user):
 @router.message()
 async def poster_photo(msg: Message, bot: Bot):
     user, created = await sync_to_async(TelegramUser.objects.get_or_create)(user_id=msg.from_user.id)
-    await bot.forward_message(msg.from_user.id, "-1002455211388", 7)
+    await bot.forward_message(msg.from_user.id, "-1002287307377", 4)
     # if msg.photo:
     #     photo_id = msg.photo[-1].file_id
     #     builder = InlineKeyboardBuilder()
-    #     builder.add(InlineKeyboardButton(text="ПОКУПКА", url="https://t.me/Operator_Butterfly"))
-    #     builder.add(InlineKeyboardButton(text="Chat", url="https://t.me/+6gF26fuonpxhYjAx"))
-    #     builder.add(InlineKeyboardButton(text="Channel", url="https://t.me/+WLak2v0dz7I0NTVh"))
+    #     builder.add(InlineKeyboardButton(text="ПОКУПКА", url="https://t.me/Butterfly_coc"))
+    #     builder.add(InlineKeyboardButton(text="Chat", url="https://t.me/+TCK-ln4iDoA2YTk6"))
+    #     builder.add(InlineKeyboardButton(text="Channel", url="https://t.me/butterfly_coco"))
     #     builder.adjust(1, 2)
-    #     a = await bot.send_photo("-1002455211388", caption=".", photo=photo_id, reply_markup=builder.as_markup())
+    #     a = await bot.send_photo("-1002287307377", caption=".", photo=photo_id, reply_markup=builder.as_markup())
     #     print(a.chat.id, a.message_id)
     #     await bot.forward_message(msg.from_user.id, a.chat.id, a.message_id)
 #         print(photo_id)
